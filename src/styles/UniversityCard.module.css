@@ -1,0 +1,152 @@
+/* UniversityCard.module.css */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  width: 650px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Featured Badge */
+.featured {
+  position: absolute;
+  top: 10px;
+  left: -14px; 
+  background: yellow;
+  color: black;
+  padding: 4px 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transform: rotate(-30deg);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+
+.imageContainer {
+  position: relative;
+  flex: 1;
+  max-width: 35%;
+  overflow: hidden;
+  border-radius: 12px; 
+  border: 2px solid black; 
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.universityImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px; 
+}
+
+.content {
+  flex: 1;
+  padding-left: 15px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.iconsContainer {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.iconDisabled {
+  font-size: 18px;
+  color: #ddd;
+}
+
+ .universityLogo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.universityName {
+    
+  font-size: 18px;
+  margin: 5px 0;
+  font-weight: bold;
+  overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.details span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.accreditation_container {
+  display: flex;
+  gap: 8px; 
+  align-items: center;
+  margin-top: 8px;
+}
+
+.accreditation_logo {
+  width: 30px;  
+  height: 30px; 
+  background-color: white;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+  margin-top: 8px;
+}
+
+.docIcon {
+  font-size: 18px;
+  color: #666;
+}
+
+.applyBtn {
+  background: #1e6de0;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
