@@ -5,6 +5,7 @@ import { IoMdSchool } from "react-icons/io";
 import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 
 const UniversityCard = ({ university }) => {
+
     return (
       
       <div className={styles.card}>
@@ -30,7 +31,7 @@ const UniversityCard = ({ university }) => {
             className={styles.universityLogo}
           />
         </div>
-        <h2 className={styles.universityName}>{university.name}</h2>
+        <h3 className={styles.universityName}>{university.name}</h3>
         <div className={styles.details}>
           <span>
             <IoMdSchool /> <strong>{university.courses}</strong> Courses

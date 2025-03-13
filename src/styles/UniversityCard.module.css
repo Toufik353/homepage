@@ -8,16 +8,18 @@
   border-radius: 12px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
   padding: 15px;
-  width: 650px;
+  width: 100%;
+  max-width: 650px;
   position: relative;
   margin-bottom: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Featured Badge */
 .featured {
   position: absolute;
   top: 10px;
-  left: -14px; 
+  left: -14px;
   background: yellow;
   color: black;
   padding: 4px 10px;
@@ -30,24 +32,25 @@
   z-index: 100;
 }
 
-
+/* Image Container */
 .imageContainer {
   position: relative;
   flex: 1;
   max-width: 35%;
   overflow: hidden;
-  border-radius: 12px; 
-  border: 2px solid black; 
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
 }
 
 .universityImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 12px; 
+  border-radius: 12px;
 }
 
+/* Content Section */
 .content {
   flex: 1;
   padding-left: 15px;
@@ -60,9 +63,11 @@
   width: 100%;
 }
 
+/* Icons */
 .iconsContainer {
   display: flex;
   gap: 8px;
+  margin-top: -35px;
 }
 
 .icon {
@@ -76,26 +81,29 @@
   color: #ddd;
 }
 
- .universityLogo {
+/* University Logo */
+.universityLogo {
   width: 60px;
   height: 60px;
   object-fit: contain;
   border-radius: 4px;
 }
 
+/* University Name */
 .universityName {
-    
   font-size: 18px;
   margin: 5px 0;
   font-weight: bold;
+  color: black !important;
   overflow: hidden;
-    text-overflow: ellipsis;
-
+  text-overflow: ellipsis;
 }
 
+/* Details */
 .details {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
   font-size: 14px;
   color: #666;
@@ -107,26 +115,27 @@
   gap: 5px;
 }
 
+/* Accreditation */
 .accreditation_container {
   display: flex;
-  gap: 8px; 
+  gap: 8px;
   align-items: center;
   margin-top: 8px;
 }
 
 .accreditation_logo {
-  width: 30px;  
-  height: 30px; 
+  width: 30px;
+  height: 30px;
   background-color: white;
   border-radius: 8px;
   padding: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
+/* Buttons */
 .buttonContainer {
   display: flex;
   justify-content: flex-end;
@@ -149,4 +158,62 @@
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.applyBtn:hover {
+  background: #1557b5;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {  /* Tablets */
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .imageContainer {
+    max-width: 50%;
+  }
+
+  .content {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {  /* Mobile */
+  .card {
+    flex-direction: column;
+    width: 90%;
+    padding: 15px;
+    margin: 0 auto;
+  }
+
+  .imageContainer {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .universityLogo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .universityName {
+    font-size: 16px;
+  }
+
+  .details {
+    justify-content: center;
+  }
+
+  .buttonContainer {
+    justify-content: center;
+  }
 }
